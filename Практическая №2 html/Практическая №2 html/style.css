@@ -1,0 +1,15 @@
+.name,.sort, .img, .cost {
+    padding: 0px 12px;
+    padding-bottom: 3px;
+}
+.sort{
+    padding: 0 69px;
+}
+.img {
+    padding: 10px 48px;
+    padding-top: 3px;
+}
+.cost{
+    padding: 10px 1px;
+    padding-bottom: 3px;
+}
