@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            border: 1xp solid green;
+            width: 100%;
+        }
+        .container__item-element{
+            width: 300px;
+            height: 400px;
+            border: 1px solid #000;
+            gap: 50px;
+            margin: 20px;
+        }
+        .container__item{
+            display: flex;
+        }
+        .container__item-element:hover{
+            background-color: rgb(11, 125, 219);
+        }
+        .container__item-element{
+            cursor: pointer;
+        }
+        .container__item-element:first-child{
+            height: 200px;
+        }
+        .container__item-element:last-child{
+            height: 500px;
+        }
+        .container__item-element:nth-child(2){
+            height: 300px;
+        }
+        .container__item{
+            align-items: center;
+        }
+        .container__item{
+            justify-content: center;
+        }
+        /* .container__item{
+        flex-direction: column;
+        } */
+        </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="container__item">
+            <div class="container__item-element"></div>
+            <div class="container__item-element"></div>
+            <div class="container__item-element"></div>
+        </div>
+    </div>
+</body>
+</html>
