@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Обнуление стандартных стилей */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: cadetblue;
+        }
+        .container{
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        .navigation{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background-color: gray;
+            /* Позиционирование */
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+        .navigation_item{
+            border-bottom: 2px solid #000;
+            cursor: pointer;
+            height: 100%;
+        }
+        .navigation_item:hover{
+            color: blue;
+        }
+        .navigation_item_outlined{
+            border: 2px solid #000;
+            border-radius: 12px;
+            padding: 6px;
+        }
+        .popup{
+            max-width: 600px;
+            min-width: 400px;
+
+            max-height: 800px;
+            min-height: 600px;
+            border: 5px dashed #000;
+            background-color: blueviolet;
+            /* Позиционирование */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .space{
+            height: 300vh;
+        }
+        .cards{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            /* Позиционирование */
+            position: sticky;
+            top: 120px;
+        }
+        .cards__element{
+            border: 6px solid #000;
+            border-radius: 12px;
+            font-size: 48px;
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Блок -->
+    <div class="container">
+        <!-- Блок -->
+        <div class="navigation">
+            <!-- Элемент -->
+            <div class="navigation_item">Menu</div>
+            <div class="navigation_item">About</div>
+            <div class="navigation_item">Sign up</div>
+            <!-- Модификатор -->
+            <div class="navigation_item navigation_item_outlined">Sign in</div>
+        </div>
+        <!-- Модельное окно -->
+        <div class="popup">
+
+            <div class="popup__content">
+                <div class="popup__content-titele">
+                    Добро пожаловать
+                </div>
+            </div>
+            <div class="popup__content-subtitle">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus nulla dolores iste reiciendis aut corporis repellat dignissimos dolorem perferendis. Corporis commodi repellat neque delectus magni suscipit molestiae, assumenda impedit.
+            </div>
+        
+        </div>
+        <div class="space"></div>
+        <div class="cards">
+            <div class="cards__element">
+                <div class="cards__element-title">1</div>
+            </div>
+            <div class="cards__element">
+                <div class="cards__element-title">2</div>
+            </div>
+            <div class="cards__element">
+                <div class="cards__element-title">3</div>
+            </div>
+            <div class="cards__element">
+                <div class="cards__element-title">4</div>
+            </div>
+        </div>
+        <div class="space"></div>
+    </div>
+</body>
+</html>
