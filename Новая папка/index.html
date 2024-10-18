@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Одежды</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        .product h3 {
+            margin: 0 0 10px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Добро пожаловать в магазин одежды!</h1>
+    <div id="product-list"></div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        const tg = window.Telegram.WebApp;
+
+        // Пример списка товаров
+        const products = [
+            { id: 1, name: "Футболка", price: 20 },
+            { id: 2, name: "Джинсы", price: 40 },
+            { id: 3, name: "Куртка", price: 60 }
+        ];
+
+        // Функция для отображения списка товаров
+        function displayProducts() {
+            const productList = document.getElementById('product-list');
+            products.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product');
+                productDiv.innerHTML = `
+                    <h3>${product.name} - $${product.price}</h3>
+                    <button class="button" onclick="buyProduct(${product.id})">Купить</button>
+                `;
+                productList.appendChild(productDiv);
+            });
+        }
+
+        // Функция для обработки покупки
+        function buyProduct(productId) {
+            const product = products.find(p => p.id === productId);
+            if (product) {
+                tg.sendData(`Заказ: ${product.name}, Цена: $${product.price}`);
+                alert(`Вы купили: ${product.name}`);
+            }
+        }
+
+        displayProducts();
+    </script>
+</body>
+</html>
