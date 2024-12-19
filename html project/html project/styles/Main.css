@@ -1,0 +1,541 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #292d38;
+    color: #fff;
+    font-family: Optimistic Display, -apple-system, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* Первая страница */
+
+.first_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #191a1f;
+}
+
+.first_main_heading {
+    text-align: center;
+}
+
+.first_main_heading h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.first_main_heading p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff !important;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Подзаголовок */
+.first_main_subtitle p {
+    font-size: 1rem;
+    color: #ffffff !important;
+    /* Сероватый текст */
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+/* Вторая страница */
+
+.second_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Заголовок и описание */
+.second_main_heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.second_main_heading p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff !important;
+    max-width: 600px;
+}
+
+/* Изображение блока */
+.second_main_img {
+    background-color: #1c1e27; /* Темный блок */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+}
+
+.second_main_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Подзаголовок */
+.second_main_subtitle p {
+    font-size: 1rem;
+    color: #ffffff !important;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+/* Третья страница */
+
+.third_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #191a1f;
+}
+
+/* Заголовок и описание */
+.third_main_heading {
+    text-align: center;
+}
+
+.third_main_heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.third_main_heading p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Изображение блока */
+.third_main_img {
+    background-color: #1c1e27; /* Темный блок под изображением */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+    overflow: hidden; /* Обрезаем углы изображения */
+    max-width: 800px; /* Ограничиваем максимальную ширину */
+}
+
+.third_main_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Подзаголовок */
+.third_main_subtitle p {
+    font-size: 1rem;
+    color: #ffffff !important; 
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Кнопка */
+.third_main_button a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Отступ между иконкой и текстом */
+    background-color: transparent; /* Прозрачный фон */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #3d3f4c; /* Тонкая рамка */
+    border-radius: 9999px; /* Закругляем до овальной формы */
+    box-shadow: inset 0 0 0 1px #3d3f4c; /* Внутренний эффект рамки */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.third_main_button a:hover {
+    background-color: #3d3f4c; /* Серый фон при наведении */
+    color: #ffffff; /* Белый текст */
+}
+
+.third_main_button a::before {
+    content: " </> "; /* Имитация иконки кода */
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.third_main_button a::after {
+    content: " > "; /* Имитация стрелки справа */
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Четвёртая страница */
+
+.four_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Заголовок и описание */
+.four_main_heading {
+    text-align: center;
+}
+
+.four_main_heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.four_main_heading p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Изображение блока */
+.four_main_img {
+    background-color: #1c1e27; /* Темный блок под изображением */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+    overflow: hidden; /* Обрезаем углы изображения */
+    max-width: 800px; /* Ограничиваем максимальную ширину */
+}
+
+.four_main_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Подзаголовок */
+.four_main_subtitle p {
+    font-size: 1rem;
+    color: #ffffff !important; 
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Кнопка */
+.four_main_button a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Отступ между иконкой и текстом */
+    background-color: transparent; /* Прозрачный фон */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #3d3f4c; /* Тонкая рамка */
+    border-radius: 9999px; /* Закругляем до овальной формы */
+    box-shadow: inset 0 0 0 1px #3d3f4c; /* Внутренний эффект рамки */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.four_main_button a:hover {
+    background-color: #3d3f4c; /* Серый фон при наведении */
+    color: #ffffff; /* Белый текст */
+}
+
+.four_main_button a::after {
+    content: " > "; /* Имитация стрелки справа */
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Пятая страница */
+
+.five_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #191a1f;
+}
+
+/* Заголовок и описание */
+.five_main_heading {
+    text-align: center;
+}
+
+.five_main_heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.five_main_heading p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff !important;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Изображение блока */
+.five_main_img {
+    background-color: #1c1e27; /* Темный блок под изображением */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+    overflow: hidden; /* Обрезаем углы изображения */
+    max-width: 800px; /* Ограничиваем максимальную ширину */
+}
+
+.five_main_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Подзаголовок */
+.five_main_subtitle p {
+    font-size: 1rem;
+    color: #ffffff !important; 
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Кнопка */
+.five_main_button a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Отступ между иконкой и текстом */
+    background-color: transparent; /* Прозрачный фон */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #3d3f4c; /* Тонкая рамка */
+    border-radius: 9999px; /* Закругляем до овальной формы */
+    box-shadow: inset 0 0 0 1px #3d3f4c; /* Внутренний эффект рамки */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.five_main_button a:hover {
+    background-color: #3d3f4c; /* Серый фон при наведении */
+    color: #ffffff; /* Белый текст */
+}
+
+.five_main_button a::after {
+    content: " > "; /* Имитация стрелки справа */
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Шестая страница */
+
+/* Контейнер секции */
+.six_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 10%;
+    gap: 2rem;
+}
+
+/* Левая колонка */
+.news_left {
+    flex: 1;
+}
+
+.news_left h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.news_left p {
+    margin-bottom: 1.5rem;
+    color: #cfcfcf;
+}
+
+/* Кнопка */
+.read_more_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Отступ между иконкой и текстом */
+    background-color: transparent; /* Прозрачный фон */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #3d3f4c; /* Тонкая рамка */
+    border-radius: 9999px; /* Закругляем до овальной формы */
+    box-shadow: inset 0 0 0 1px #3d3f4c; /* Внутренний эффект рамки */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.read_more_btn:hover {
+    background-color: #3d3f4c; /* Серый фон при наведении */
+    color: #ffffff; /* Белый текст */
+}
+
+.read_more_btn::after {
+    content: " > "; /* Имитация стрелки справа */
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Правая колонка */
+.news_right {
+    flex: 1;
+}
+
+.news_right h4 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #9ca3af;
+}
+
+.news_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.news_card {
+    border: 1px solid #686c79;
+    border-radius: 8px;
+    padding: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.news_card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.news_card p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.news_card:hover {
+    transform: translateY(-5px);
+    border-color: #5f6b7a;
+}
+
+/* Седьмая страница */
+
+.seven_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #191a1f;
+}
+
+/* Заголовок и описание */
+.seven_main_heading {
+    text-align: center;
+}
+
+.seven_main_heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.seven_main_heading p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff !important;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Изображение блока */
+.seven_main_img {
+    height: 100%;
+    width: 1900px;
+    background-color: #1c1e27; /* Темный блок под изображением */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+    overflow: hidden; /* Обрезаем углы изображения */
+}
+
+.seven_main_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.seven_main_logo svg {
+    width: 100px; /* Размер лого */
+    height: auto;
+    margin: 20px auto; /* Отступы сверху и снизу */
+    color: #61dafb; /* Цвет лого React */
+}
+
+/* Подзаголовок */
+.seven_main_subtitle p {
+    font-size: 1rem;
+    color: #ffffff !important; 
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Кнопка */
+
+.seven_main_button{
+    padding: 10px;
+}
+
+.seven_main_text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Кнопка */
+.seven_main_button a {
+    display: inline-block;
+    background-color: #61dafb; /* Цвет кнопки React */
+    color: #0d1117; /* Цвет текста кнопки */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 999px; /* Скругление углов */
+    transition: background-color 0.3s ease;
+}

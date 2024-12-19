@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: fixed; /* Makes the nav fixed to the viewport */
+    top: 0; /* Positions it at the top */
+    left: 0; /* Positions it at the left */
+    width: 100%; /* Takes up the full width */
+    z-index: 1000; /* Ensures it's on top of other content (adjust as needed) */
+    background-color: #292d38; /* Or your desired background color */
+    padding: 10px; /* Add some padding if needed */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+  
+  nav .absolute {
+    position: relative; /*remove absolute positioning*/
+  }
+
+.header_info {
+    display: flex;
+    align-items: center; /* Выравнивание кнопок по вертикали */
+    gap: 15px; /* Расстояние между кнопками */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Прижимаем к верху */
+    right: 0; /* Прижимаем к правому краю */
+    padding: 10px; /* Отступы от краёв страницы */
+    background-color: transparent; /* Если фон не нужен */
+}
+
+.header_info p{
+    font-size: 15px;
+}
+
+.logo_input svg{
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: #51c9d9;
+}
+
+.logo_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* Расстояние между элементами */
+}
+
+.logo_input a {
+    text-decoration: none;
+    font-size: 12px; 
+    color: #99A1B3; /* Цвет текста */
+}
+.logo_input a:hover{
+    color: #51c9d9;
+}
+.logo_input input[type="text"] {
+    cursor: pointer;
+    padding: 0 20px 0 40px;
+    width: 600px;
+    height: 30px;
+    background-color: #393f4b;
+    border: 1px solid #393f4b;
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0 100px 0 40px; /* Пространство слева и справа */
+    outline: none;
+    margin: 0 auto; /* Центрируем input */
+}
+
+.logo_input input::placeholder {
+    color: #b3b3b3;
+}
+
+.logo_input .search-icon {
+    position: absolute;
+    left: calc(50% - 280px); /* Центрируем иконку слева */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b3b3b3;
+    font-size: 16px;
+}
+
+.logo_input .shortcut {
+    position: absolute;
+    right: calc(50% - 280px); /* Центрируем текст "Ctrl K" справа */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b3b3b3;
+    font-size: 12px;
+    background-color: #3a3d42;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Навигация справа */
+.header_info {
+    display: flex;
+    gap: 20px;
+}
+.header_info a{
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 14px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+    color: rgba(255, 255, 255, 0.863); /* Белый цвет текста */
+    padding: 5px 10px; /* Внутренние отступы для кнопочного эффекта */
+    border-radius: 999px; /* Скругленные края */
+}
+.header_info a:hover {
+    background-color: rgba(82, 93, 116, 0.377); /* Фон при наведении */
+}
+.header_main {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: center; /* Центрируем по горизонтали */
+    margin: 48px 20px 100px; /* Отступы вокруг контейнера */
+    padding-top: 80px;
+}
+
+.header_main svg {
+    display: block; /* Убираем возможные пробелы вокруг SVG */
+    margin-bottom: 20px; /* Отступ от SVG до текста */
+    color: #51c9d9;
+}
+
+.conteiner_undph {
+    text-align: center; /* Центрируем текст внутри контейнера */
+}
+
+.txt_re h2 {
+    font-size: 40px; /* Размер заголовка */
+    margin-bottom: 10px; /* Отступ от заголовка до текста */
+    color: #ffffff;
+}
+
+.txt_re p {
+    font-size: 32px; /* Размер текста */
+    color: #ffffff; /* Цвет текста */
+}
+
+.buttun-und {
+    display: flex;
+    gap: 15px; /* Расстояние между кнопками */
+    justify-content: center; /* Центрируем кнопки */
+    margin-top: 20px; /* Отступ сверху до кнопок */
+}
+
+
+.buttun-und a {
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 14px; /* Размер текста кнопок */
+    font-weight: bold; /* Жирный текст */
+    color: #191a1f; /* Цвет текста кнопок */
+    background-color: #007acc; /* Фон кнопок */
+    border-radius: 20px; /* Скругленные края */
+    transition: background-color 0.3s ease;
+}
+.buttun-und #txt {
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 14px; /* Размер текста кнопок */
+    font-weight: bold; /* Жирный текст */
+    color: white; /* Цвет текста кнопок */
+    background-color: #292d38; /* Фон кнопок */
+    border: solid 1px;
+    transition: background-color 0.3s ease;
+}
+.buttun-und a:hover {
+    background-color: #005fa3; /* Цвет кнопок при наведении */
+}
